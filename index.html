@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <title>Frontend project| Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="./src/main.css">
+
+
+</head>
+
+<body>
+
+    <header class="score-container">
+        <div class="logo"></div>
+        <div class="score">
+            <p>SCORE</p>
+            <p id="score">00</p>
+        </div>
+    </header>
+
+    <!-- Starting section -->
+    <section id="start" class="trio">
+        <article class="trio-row-1">
+            <div class="circle-outer paper-outer" data-val="paper">
+                <span class="circle paper" data-val="paper">
+                </span>
+            </div>
+            <div class="circle-outer scissors-outer" data-val="scissors">
+                <span class="circle scissors" data-val="scissors">
+                </span>
+            </div>
+        </article>
+
+        <article class="trio-row-2">
+            <div class="circle-outer rock-outer" data-val="rock">
+                <span class="circle rock" data-val="rock">
+                </span>
+            </div>
+        </article>
+    </section>
+
+    <!-- Active Game section -->
+    <section id="active" style="display: none;">
+        <article class="circle-container arrange">
+            <p class="circle-info">you picked</p>
+            <div id="player" class="placeholder-outer request-loader">
+                <span id="player-span"></span>
+            </div>
+        </article>
+        <div class="play-again arrange">
+            <h1 id="play-again-text">you win</h1>
+            <button id="play-again-btn">play again</button>
+        </div>
+        <article class="circle-container arrange">
+            <p class="circle-info">the house picked</p>
+            <div id="house" class="placeholder-outer">
+                <span id="house-span"></span>
+            </div>
+        </article>
+    </section>
+
+    <section class="rules">
+        <button id="rules">
+            rules
+        </button>
+    </section>
+
+    <section id="modal" class="rules-modal" style="display: none;">
+        <article class="modal">
+            <p class="modal-element">rules</p>
+            <img class="modal-element" src="./images/image-rules.svg" alt="rules">
+            <img class="modal-element" id="close" src="./images/icon-close.svg" alt="close">
+        </article>
+    </section>
+
+    <footer class="attribution">
+        Coded by 
+         <a target="_blank" href="https://github.com/Sleep-lover">Laleet</a>
+    </footer>
+
+
+    <!-- <script src="./src/index.js"></script> -->
+    <script src="./src/index.js"></script>
+    <script src="./src/rules.js"></script>
+</body>
+
+</html>
